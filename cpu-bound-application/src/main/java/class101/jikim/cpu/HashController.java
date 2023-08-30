@@ -29,4 +29,9 @@ public class HashController {
 			.printHexBinary(digest).toUpperCase();
 		return myHash;
 	}
+
+	@RequestMapping("/hello")
+	public String hello() {
+		return "hello";
+	}
 }
