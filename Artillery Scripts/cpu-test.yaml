@@ -3,8 +3,8 @@ config:
   phases:
     # duration 초동안 성능을 측정하고
     # arrivalRate : virtual user 생성
-    - duration: 60
-      arrivalRate: 16
+    - duration: 360
+      arrivalRate: 1
       name: Warm up phase
 scenarios:
   - name: "Just Get Hash"
