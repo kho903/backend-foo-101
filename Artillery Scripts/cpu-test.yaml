@@ -1,10 +1,10 @@
 config:
-  target: # GCP 인스턴스 주소
+  target: "http://35.201.223.27" # GCP 인스턴스 주소
   phases:
     # duration 초동안 성능을 측정하고
     # arrivalRate : virtual user 생성
     - duration: 360
-      arrivalRate: 1
+      arrivalRate: 2
       name: Warm up phase
 scenarios:
   - name: "Just Get Hash"
